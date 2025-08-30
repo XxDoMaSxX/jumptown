@@ -18,7 +18,7 @@ const inflatables: Inflatable[] = [
     title: "Labirinto zona",
     description:
       "Unikalus ketvirtainės formos labirintas su daugybe stulpelių ir posūkių. Rekomenduojama komplektuoti su kitais batutais.",
-    priceEur: 90,
+    priceEur: 100,
       image: "/static/images/batutai/1/01-labirintas.jpeg",
   },
   {
@@ -26,7 +26,7 @@ const inflatables: Inflatable[] = [
     title: "Palmių čiuožykla (dviguba)",
     description:
     "Dviguba čiuožykla su spalvingomis palmių dekoracijomis viršuje. Rekomenduojama komplektuoti su kitais batutais.",    
-    priceEur: 120,
+    priceEur: 150,
     image: "/static/images/batutai/2/02-palmes.jpeg",
   },
   {
@@ -34,7 +34,7 @@ const inflatables: Inflatable[] = [
     title: "Mini kliūčių parkas",
     description:
       "Kompaktiškas ruožas su tuneliais, barjerais ir nedidele čiuožykla. Rekomenduojama komplektuoti su kitais batutais.",
-    priceEur: 120,
+    priceEur: 140,
     image: "/static/images/batutai/3/03-mini-parkas.jpeg",
   },
   {
@@ -42,7 +42,7 @@ const inflatables: Inflatable[] = [
     title: "Žiedų arena",
     description:
       "Kliūčių zona su pripučiamais žiedais ir vingiais. Rekomenduojama komplektuoti su kitais batutais.",
-    priceEur: 90,
+    priceEur: 100,
     image: "/static/images/batutai/4/04-ziedu-arena.jpeg",
   },
   {
@@ -50,7 +50,7 @@ const inflatables: Inflatable[] = [
     title: "Didžioji kliūčių trasa",
     description:
       "Ilgas ruožas su kopimu, tinklais ir čiuožykla.",
-    priceEur: 130,
+    priceEur: 180,
     image: "/static/images/batutai/5/05-didzioji-trasa.jpeg",
   },
   {
@@ -58,7 +58,7 @@ const inflatables: Inflatable[] = [
     title: "Triguba čiuožykla",
     description:
       "Du ekstremalūs 8 metrų auksčio paraleliniai nusileidimo takai. ",
-    priceEur: 180,
+    priceEur: 200,
     image: "/static/images/batutai/6/06-triguba.jpeg",
   },
   {
@@ -66,7 +66,7 @@ const inflatables: Inflatable[] = [
     title: "Aukštoji čiuožykla",
     description:
       "Aukšta, 8 metru auksčio tiesi čiuožykla su plačia nusileidimo zona – greitis ir adrenalinas drąsiausiems.",
-    priceEur: 180,
+    priceEur: 200,
     image: "/static/images/batutai/7/07-aukstoji.jpeg",
   },
   {
@@ -74,7 +74,7 @@ const inflatables: Inflatable[] = [
     title: "Pilies čiuožykla",
     description:
       "Įspūdinga pilies tematikos konstrukcija su dviem nusileidimais – tikras vizualinis akcentas bet kuriam renginiui.",
-    priceEur: 150,
+    priceEur: 200,
     image: "/static/images/batutai/8/08-pilis.jpeg",
   },
   {
@@ -82,7 +82,7 @@ const inflatables: Inflatable[] = [
     title: "Bangų trasa",
     description:
       "Bangų formos kliūtys ir cilindrai – balanso, ištvermės ir juoko pilna atrakcija visiems dalyviams.",
-    priceEur: 140,
+    priceEur: 160,
     image: "/static/images/batutai/9/09-bangu-trasa.jpeg",
   },
 ]
