@@ -6,7 +6,7 @@ const siteConfig = {
   logo: Logo,
   seo: {
     title: 'JumpTown',
-    description: 'JumpTown - vienas didžiausių batutų parkų Baltijos šalyse. Batutų nuoma Panevėžyje su pristatymu visoje Lietuvoje.',
+    description: 'JumpTown - vienas didžiausių batutų parkų Europoje. Batutų nuoma Panevėžyje su pristatymu visoje Lietuvoje.',
   } as NextSeoProps,
   termsUrl: '#',
   privacyUrl: '#',

@@ -57,7 +57,7 @@ const inflatables: Inflatable[] = [
     id: "triguba-ciuozykla",
     title: "Triguba čiuožykla",
     description:
-      "Du ekstremalūs 8 metrų auksčio paraleliniai nusileidimo takai. ",
+      "Du ekstremalūs 8 metrų aukščio paraleliniai nusileidimo takai. ",
     priceEur: 200,
     image: "/static/images/batutai/6/06-triguba.jpeg",
   },
@@ -65,7 +65,7 @@ const inflatables: Inflatable[] = [
     id: "aukstoji-ciuozykla",
     title: "Aukštoji čiuožykla",
     description:
-      "Aukšta, 8 metru auksčio tiesi čiuožykla su plačia nusileidimo zona – greitis ir adrenalinas drąsiausiems.",
+      "Aukšta, 8 metru aukščio tiesi čiuožykla su plačia nusileidimo zona – greitis ir adrenalinas drąsiausiems.",
     priceEur: 200,
     image: "/static/images/batutai/7/07-aukstoji.jpeg",
   },

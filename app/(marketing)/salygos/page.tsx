@@ -47,7 +47,7 @@ export default function RulesPage() {
           <Heading size="md">Naudojimo taisyklės</Heading>
           <UnorderedList spacing={2}>
             <ListItem>Batutų negalima naudoti kol jie pilnai neprisipūtė arba yra išleidžiami.</ListItem>
-            <ListItem>Maksimalus vieno dalyvio svoris – 80 kg.</ListItem>
+            <ListItem>Maksimalus vieno dalyvio svoris – 100 kg.</ListItem>
             <ListItem>Privaloma nusiauti batus ir nusiimti visus aštrius daiktus (diržus, akinius, papuošalus ir pan.).</ListItem>
             <ListItem>Negalima į batutą neštis maisto, gėrimų, žaislų ar gyvūnų.</ListItem>
             <ListItem>Draudžiama prie batutų naudoti fejerverkus, konfeti ar kitus šventės efektus.</ListItem>
