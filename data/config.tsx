@@ -22,11 +22,6 @@ const siteConfig = {
         label: 'Kontaktai',
         href: '/kontaktai',
       },
-       {
-        id: 'kontaktai',
-        label: 'Kontaktai',
-        href: '/kontaktai',
-      },
         {
         id: 'terms-conds',
         label: 'Sąlygos ir taisyklės',
