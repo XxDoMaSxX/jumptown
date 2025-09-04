@@ -29,7 +29,7 @@ export default function ContactPage() {
           <HStack spacing={6}>
             <Box>
               <Text fontWeight="bold">Telefonas:</Text>
-              <Link href="tel:+37061119833">+370 61119833</Link>
+              <Link href="tel:+37061119833">+37061119833</Link>
             </Box>
             <Box>
               <Text fontWeight="bold">El. paštas:</Text>

@@ -46,7 +46,7 @@ const siteConfig = {
     links: [
           {
       href: 'tel:+37061119833',      
-      label: '+370 611 19833',
+      label: '+37061119833',
     },
     {
       href: 'mailto:dragunasdomas@gmail.com', // el. paštas
