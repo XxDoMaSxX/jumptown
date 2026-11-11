@@ -19,7 +19,7 @@ const inflatables: Inflatable[] = [
     description:
       "Unikalus ketvirtainės formos labirintas su daugybe stulpelių ir posūkių. Rekomenduojama komplektuoti su kitais batutais.",
     priceEur: 100,
-      image: "/static/images/batutai/1/01-labirintas.jpeg",
+      image: "/static/images/batutai/1/01-labirintas.JPEG",
   },
   {
     id: "palmiu-ciuozykla",
@@ -27,7 +27,7 @@ const inflatables: Inflatable[] = [
     description:
     "Dviguba čiuožykla su spalvingomis palmių dekoracijomis viršuje. Rekomenduojama komplektuoti su kitais batutais.",    
     priceEur: 150,
-    image: "/static/images/batutai/2/02-palmes.jpeg",
+    image: "/static/images/batutai/2/02-palmes.JPEG",
   },
   {
     id: "mini-kliuciu-parkas",
@@ -35,7 +35,7 @@ const inflatables: Inflatable[] = [
     description:
       "Kompaktiškas ruožas su tuneliais, barjerais ir nedidele čiuožykla. Rekomenduojama komplektuoti su kitais batutais.",
     priceEur: 140,
-    image: "/static/images/batutai/3/03-mini-parkas.jpeg",
+    image: "/static/images/batutai/3/03-mini-parkas.JPEG",
   },
   {
     id: "ziedu-arena",
@@ -43,15 +43,15 @@ const inflatables: Inflatable[] = [
     description:
       "Kliūčių zona su pripučiamais žiedais ir vingiais. Rekomenduojama komplektuoti su kitais batutais.",
     priceEur: 100,
-    image: "/static/images/batutai/4/04-ziedu-arena.jpeg",
+    image: "/static/images/batutai/4/04-ziedu-arena.JPEG",
   },
   {
-    id: "didzioji-trasа",
+    id: "didzioji-trasa",
     title: "Didžioji kliūčių trasa",
     description:
       "Ilgas ruožas su kopimu, tinklais ir čiuožykla.",
     priceEur: 180,
-    image: "/static/images/batutai/5/05-didzioji-trasa.jpeg",
+    image: "/static/images/batutai/5/05-didzioji-trasa.JPEG",
   },
   {
     id: "triguba-ciuozykla",
@@ -59,7 +59,7 @@ const inflatables: Inflatable[] = [
     description:
       "Du ekstremalūs 8 metrų aukščio paraleliniai nusileidimo takai. ",
     priceEur: 200,
-    image: "/static/images/batutai/6/06-triguba.jpeg",
+    image: "/static/images/batutai/6/06-triguba.JPEG",
   },
   {
     id: "aukstoji-ciuozykla",
@@ -67,7 +67,7 @@ const inflatables: Inflatable[] = [
     description:
       "Aukšta, 8 metru aukščio tiesi čiuožykla su plačia nusileidimo zona – greitis ir adrenalinas drąsiausiems.",
     priceEur: 200,
-    image: "/static/images/batutai/7/07-aukstoji.jpeg",
+    image: "/static/images/batutai/7/07-aukstoji.JPEG",
   },
   {
     id: "pilies-ciuozykla",
@@ -75,7 +75,7 @@ const inflatables: Inflatable[] = [
     description:
       "Įspūdinga pilies tematikos konstrukcija su dviem nusileidimais – tikras vizualinis akcentas bet kuriam renginiui.",
     priceEur: 200,
-    image: "/static/images/batutai/8/08-pilis.jpeg",
+    image: "/static/images/batutai/8/08-pilis.JPEG",
   },
   {
     id: "bangu-ruozas",
@@ -83,7 +83,7 @@ const inflatables: Inflatable[] = [
     description:
       "Bangų formos kliūtys ir cilindrai – balanso, ištvermės ir juoko pilna atrakcija visiems dalyviams.",
     priceEur: 160,
-    image: "/static/images/batutai/9/09-bangu-trasa.jpeg",
+    image: "/static/images/batutai/9/09-bangu-trasa.JPEG",
   },
 ]
 
@@ -196,7 +196,7 @@ function FullParkPromo() {
         <Box flex="1" w="100%">
           <AspectRatio ratio={16 / 9} w="100%" rounded="xl" overflow="hidden">
             <Image
-              src="/static/images/batutai/bendri/priekis.jpg" // <-- įsidėk savo banerio kelią
+              src="/static/images/batutai/bendri/priekis.JPG" // <-- įsidėk savo banerio kelią
               alt="Batutų parkas 700 m²"
               fill
               style={{ objectFit: "cover", objectPosition: "center" }}

@@ -55,7 +55,7 @@ export default function HomeClient() {
             <Box flex="1">
               <FallInPlace delay={1}>
                 <Image
-                  src="/static/screenshots/list.jpg"
+                  src="/static/screenshots/list.JPG"
                   alt="Batutų parkas"
                   width={600}
                   height={400}

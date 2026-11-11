@@ -50,7 +50,7 @@ const siteConfig = {
     },
     {
       href: 'mailto:dragunasdomas@gmail.com', // el. paštas
-      label: 'dragunasdomas@gmail.lt',
+      label: 'dragunasdomas@gmail.com',
     },
       {
         href: '/kontaktai',

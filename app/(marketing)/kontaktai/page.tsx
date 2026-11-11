@@ -1,39 +1,72 @@
 'use client'
 
 import {
-    Box,
-    Button,
-    Container,
-    FormControl,
-    FormLabel,
-    Heading,
-    HStack,
-    Input,
-    Link,
-    Stack,
-    Text,
-    Textarea,
-    VStack,
+  Box,
+  Button,
+  Container,
+  FormControl,
+  FormLabel,
+  Heading,
+  HStack,
+  Input,
+  Link,
+  Stack,
+  Text,
+  Textarea,
+  VStack,
 } from '@chakra-ui/react'
+import { useState } from 'react'
+
+const CONTACT_EMAIL = 'dragunasdomas@gmail.com'
 
 export default function ContactPage() {
+  const [sent, setSent] = useState(false)
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    const form = new FormData(e.currentTarget)
+    const name = String(form.get('name') || '')
+    const email = String(form.get('email') || '')
+    const message = String(form.get('message') || '')
+
+    const subject = encodeURIComponent(`JumpTown užklausa — ${name || email}`)
+    const body = encodeURIComponent(
+      `${message}\n\n— ${name}\n${email}`,
+    )
+    window.location.href = `mailto:${CONTACT_EMAIL}?subject=${subject}&body=${body}`
+    setSent(true)
+  }
+
   return (
-    <Container maxW="container.md" py={{ base: 20, md: 28 }}>
+    <Container maxW="container.md" pt={{ base: 32, md: 40 }} pb={{ base: 20, md: 28 }}>
       <Stack spacing={12}>
         {/* Kontaktinė informacija */}
         <VStack spacing={4} align="start">
           <Heading size="xl">Susisiekite su mumis</Heading>
-          <Text>
-            Jei turite klausimų dėl batutų parko ar norite užsisakyti, susisiekite su mumis telefonu arba el. paštu.
+          <Text color="gray.600">
+            Turite klausimų dėl batutų parko ar norite rezervuoti? Parašykite žemiau
+            arba susisiekite telefonu ar el. paštu — atsakome operatyviai.
           </Text>
-          <HStack spacing={6}>
+          <HStack spacing={10} pt={2} flexWrap="wrap">
             <Box>
-              <Text fontWeight="bold">Telefonas:</Text>
-              <Link href="tel:+37061119833">+37061119833</Link>
+              <Text fontWeight="bold" fontSize="sm" color="gray.500">
+                Telefonas
+              </Text>
+              <Link href="tel:+37061119833" fontSize="lg" fontWeight="semibold">
+                +370 611 19833
+              </Link>
             </Box>
             <Box>
-              <Text fontWeight="bold">El. paštas:</Text>
-              <Link href="mailto:dragunasdomas@gmail.com">dragunasdomas@gmail.com</Link>
+              <Text fontWeight="bold" fontSize="sm" color="gray.500">
+                El. paštas
+              </Text>
+              <Link
+                href={`mailto:${CONTACT_EMAIL}`}
+                fontSize="lg"
+                fontWeight="semibold"
+              >
+                {CONTACT_EMAIL}
+              </Link>
             </Box>
           </HStack>
         </VStack>
@@ -41,7 +74,8 @@ export default function ContactPage() {
         {/* Kontaktinė forma */}
         <Box
           as="form"
-          p={8}
+          onSubmit={handleSubmit}
+          p={{ base: 6, md: 8 }}
           bg="white"
           border="1px solid"
           borderColor="gray.200"
@@ -56,17 +90,37 @@ export default function ContactPage() {
 
             <FormControl isRequired>
               <FormLabel>El. paštas</FormLabel>
-              <Input type="email" name="email" placeholder="Įveskite savo el. paštą" />
+              <Input
+                type="email"
+                name="email"
+                placeholder="Įveskite savo el. paštą"
+              />
             </FormControl>
 
             <FormControl isRequired>
               <FormLabel>Žinutė</FormLabel>
-              <Textarea name="message" placeholder="Įveskite savo žinutę. Jeigu norite rezervuoti - neužmirškite nurodyti batuto pavadinimo bei datos." rows={5} />
+              <Textarea
+                name="message"
+                placeholder="Įveskite savo žinutę. Jeigu norite rezervuoti – neužmirškite nurodyti batuto pavadinimo bei datos."
+                rows={5}
+              />
             </FormControl>
 
-            <Button colorScheme="purple" size="lg" type="submit" alignSelf="flex-start">
+            <Button
+              colorScheme="primary"
+              size="lg"
+              type="submit"
+              alignSelf="flex-start"
+            >
               Siųsti žinutę
             </Button>
+
+            {sent && (
+              <Text color="green.600" fontWeight="medium">
+                Ačiū! Atsidarė jūsų el. pašto programa su paruošta žinute — tereikia
+                paspausti „Siųsti“. Jei neatsidarė, parašykite tiesiai: {CONTACT_EMAIL}
+              </Text>
+            )}
           </VStack>
         </Box>
       </Stack>
